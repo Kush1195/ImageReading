@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    tools:context="com.example.admin.imagereading.ImageSelect">
+
+    <ImageView
+        android:id="@+id/image_select"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:src="@mipmap/ic_launcher"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="Enter Description Of Image Here" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@drawable/send_image" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/FileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:text="File Name :" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_toEndOf="@+id/FileName" />
+
+        <TextView
+            android:id="@+id/FilePath"
+            android:layout_below="@id/FileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="File Path :" />
+
+        <TextView
+            android:id="@+id/path"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/FileName"
+            android:layout_toEndOf="@+id/FilePath" />
+
+        <TextView
+            android:id="@+id/FileWidth"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/FilePath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="File Width :" />
+
+        <TextView
+            android:id="@+id/width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/path"
+            android:layout_toRightOf="@id/FileWidth"/>
+
+        <TextView
+            android:id="@+id/FileHeight"
+            android:layout_below="@id/FileWidth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="File Height :" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/width"
+            android:layout_toEndOf="@+id/FileHeight" />
+
+        <TextView
+            android:id="@+id/FileSize"
+            android:layout_below="@id/FileHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:text="File Size :" />
+
+        <TextView
+            android:id="@+id/Size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/height"
+            android:layout_toEndOf="@+id/FileSize" />
+
+    </RelativeLayout>
+
+</LinearLayout>
